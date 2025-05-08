@@ -1,0 +1,356 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    width: 100%;
+}
+.image-top{
+    height: 500px;
+    width: 100%;
+    background-image: url('pics/new-image-for-services.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar img{
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-left: 60px;
+    margin-right: 300px;
+    height: 80px;
+
+}
+.navbar{
+    display: flex;
+    border-bottom: 1px solid white;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    position: sticky;
+
+    
+}
+.navbar a{
+    text-decoration: none;
+    color:white;
+    margin-right: 40px;
+    font-weight: bold;
+    font-size: 15px;
+    
+}
+.navbar a:focus{
+    color: rgb(182, 127, 39);
+    border-bottom: 2px solid rgb(182, 127, 39);
+}
+
+/* nav bar section ended */
+.top{
+    color: white;
+    display: flex;
+    height: 400px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+.top h3{
+    /* margin-left: 100%; */
+    font-size: 15px;
+    font-weight: 700;
+} 
+.top h1{
+    font-size: 55px;
+    /* margin-left: 90%; */
+    font-weight: 900;
+}  
+
+/* pricing section  */
+.pricing-section{
+    background-color: rgba(182, 127, 39, 0.1);
+    height: 180vh;
+    padding: 100px 100px ;
+}
+.pricing-container{
+    display: flex;
+    height: 60vh;
+    width: 80vw;
+    /* margin-left: 80px; */
+    /* margin-top: 100px; */
+}
+.pricing-details{
+    height: 290px;
+    width: 450px;
+    margin-left: 40px;
+}
+.image1{
+    background-image: url('pics/image6.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 290px;
+    width: 450px;
+    color: white;
+
+}
+.pricing-details p{
+    /* height: 20px; */
+    margin-top: 35px;
+
+}
+.inner-top{
+    display: flex;
+    margin-bottom: 5px;
+}
+.inner-top h3{
+    font-weight: 800;
+}
+.inner-top h4{
+    font-weight: 800;
+    color: rgb(182, 127, 39);
+}
+.pricing-section img{
+    height: 290px;
+    width: 390px;
+}
+.image2{
+    background-image: url('pics/image4.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 290px;
+    width: 450px;
+    color: white;
+    /* position: relative; */
+}
+.image3{
+    background-image: url('pics/image5.jpg');
+    background-position: bottom;
+    background-size: cover;
+    height: 290px;
+    width: 450px;
+    color: white;
+}
+.image1 h1{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 110px;
+}
+.image2 h1{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 110px;
+}
+.image3 h1{
+    font-weight: 900;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 110px;
+}
+/* BOOKING SECTION STARTS */
+.booking{
+    height: 580px;
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    align-items: center;
+    background-image: url('pics/librarynew.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+}
+.rating-box{
+    height: 470px;
+    width: fit-content;
+    color: white;
+}
+.rating-box h1{
+    font-weight: 900;
+    font-size: 35px;     
+}
+.booking-box {
+    background-color: #f4ede5;
+    padding: 30px;
+    width: 330px;
+    height: 370px;
+    /* border-radius: 8px; */
+    font-family: sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-box h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .booking-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .booking-box input,
+  .booking-box select,
+  .booking-box button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+  }
+  .booking-box button {
+    border-radius: 0%;
+    margin-top: 15px;
+  }
+  
+  .booking-box button {
+    background-color: #a0835b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 1s;
+  }
+  .rating-box h3{
+    color: rgb(182, 127, 39);
+    margin-left: 30px;
+    font-weight: 800;
+  }
+  .rating-box h2{
+    margin-left: 30px;
+  }
+  
+  .booking-box button:hover {
+    background-color: #8a6d47;
+    transform: translateY(-10px);
+  }
+  .input-row {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .input-row input,
+  .input-row select{
+    flex: 1;
+  }
+  .input-row input,
+  .input-row select{
+    width: 80px;
+  }
+  /* footer section started */
+  .footer {
+    background-color: #1a120e;
+    color: #f0e6da;
+    font-family: Arial, sans-serif;
+    padding: 40px 20px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+  }
+  
+  .footer-column h3 {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .footer-column p,
+  .footer-column li,
+  .footer-column a {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #d5c9be;
+  }
+  
+  .footer-column .phone {
+    font-weight: bold;
+    font-size: 16px;
+    color: #d3a86c;
+  }
+  
+  .social-icons i {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #f0e6da;
+    cursor: pointer;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    margin-top: 15px;
+    max-width: 320px;
+    border: 1px solid #a07e5b;
+  }
+  
+  .subscribe-form input {
+    flex: 1;
+    padding: 12px 14px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .subscribe-form input::placeholder {
+    color: #ccc;
+  }
+  
+  .subscribe-form button {
+    padding: 12px 24px;
+    background-color: #a07e5b;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out ;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #8c6c4e;
+  }
+  
+  
+  .footer-bottom {
+    /* text-align: center; */
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 12px;
+    color: #aaa;
+
+  }
+   .footer-bottom p{
+    position: absolute;
+    left: 100px;
+    /* top: 10px; */
+    margin-top: 20px;
+  } 
+  
