@@ -9,8 +9,9 @@ body{
 }
 .image-top{
     height: 500px;
+    /* color: white; */
     width: 100%;
-    background-image: url('pics/image1.jpg');
+    background-image: url('pics/new-image-for-services.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -50,7 +51,7 @@ body{
 }
 
 /* nav bar section ended */
-.about-top{
+.top{
     color: white;
     display: flex;
     height: 400px;
@@ -62,242 +63,57 @@ body{
 
 
 }
-.about-top h3{
+.top h3{
     /* margin-left: 100%; */
     font-size: 15px;
     font-weight: 700;
 } 
-.about-top h1{
+.top h1{
     font-size: 55px;
     /* margin-left: 90%; */
     font-weight: 900;
 }  
-/* since section starts here */
-
-.white{
-    background-color:  rgb(245, 222, 179, 0.3);
-    display: flex;
-    height: 600px;
+/* contact form  */
+.contact{
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
 }
-.since-portion h5{
-    color: rgb(182, 127, 39);
-    margin-top: 40px;
-    overflow: hidden;
+.getintouch{
+  height: 510px;
+  width: 350px;
 }
-.white h1{
-    font-weight: 800;
-    font-size: 40px;
-}
-.white p{
-    margin-top: 20px;
-    opacity: 0.7;
-}
-.since-portion{
-    
-    /* height: 400px; */
-    width: 400px;
-    margin-left: 100px;
-
+.contact-form{
+  background-color: black;
+  color: white;
+  height: 450px;
+  width: 320px;
+  padding: 30px;
+  box-sizing: border-box;
 
 }
-.images .front{
-     height: 250px;
-     width: 200px;
-     object-fit: cover;
-     position: relative;
-     top: 100px;
-     left: 40px ;
-
+.contact-form input{
+  height: 40px;
+  width: 100px;
+  /* margin-right: 28px; */
+  margin-left: auto;
+  border: none;
 }
-.images .back{
-    height: 250px;
-    width: 200px;
-    position: relative;
-    top: 50px;
-    left: 60px;
-}  
-
-/* services section */
-.working{
-    background-color:  rgba(245, 222, 179, 0.3);
-    display: flex;
+.contact-form input[type="number"]{
+  margin-left: 35px;
 }
-.working p{
-    margin-top: 20px;
-    opacity: 0.7;
+.contact-form .subject{
+  margin-left: 35px;
 }
-.working div{
-    height: 300px;
-    width: 250px;
-    margin-left: 120px;
+input::placeholder{
+  color: black;
 }
-.working i{
-    font-size: 20px;
-   
-}
-/* experience section starts */
-.experience{
-    display: flex;
-    height: 700px;
-    width: 100%;
-    align-items: center;
-    background-color: black;
-    color: white;
-    gap: 20px;
-}
-.experience img{
-    height: 500px;
-    width: 350px;
-    object-fit: cover;
-    object-position: center;
-    margin-left: 100px;
-}
-.experience h5{
-    color:  rgb(116, 97, 68);
-    font-weight: 800;
-    font-size: 15px;
-    margin-top: 70px;
-}
-.experience-description{
-    height: 500px;
-    width: 550px;
-}
-.experience h1{
-    font-weight: 800;
-    font-size: 45px;
-}
-.experience p{
-    margin-top: 30px;
-}
-.reference{
-    color:  rgb(116, 97, 68);
-}
-/* video section */
-.video{
-    background-image: url('pics/image5.jpg');
-    background-attachment: fixed;
-    height: 60vw;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+textarea{
+  width: 95%;
+  height: 100px;
 }
 
-.video i{
-    color: white;
-    padding: 20px;
-    /* border-radius: 50%; */
-    font-size: 30px;
-}
-.video h1{
-    color: white;
-    font-weight: 900;
-    font-size: 45px;
-}
- /* hair stylist section */
- /* hair stylist portion  */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .container {
-    width: 100%;
-    position: relative;
-  }
-  
-  .black-section {
-    background-color: black;
-    height: 450px;
-    width: 100%;
-    color: white;
-    padding: 10px;
 
-    /* 🔧 Added z-index and position to ensure it appears above absolute content */
-    /* position: relative; */
-    z-index: 1;
-  }
-/* 
-  .black-section h5{
-    color:  rgb(116, 97, 68);
-    font-size: 13px;
-    font-weight: 800;
-    margin-top: 10px;
-  } */
-   .black-section h5{
-    color: rgb(116, 97, 68);
-    font-size: 13px;
-    text-align: center;
-    font-weight: 800;
-    margin-top: 90px;
-   }
-
-.black-section h1{
-    text-align: center;
-    color: white;
-    font-size: 45px;
-    font-weight: 800;
-}
-  .white-section {
-    background-color: rgba(255, 228, 196, 0.3);
-    height: 450px;
-    width: 100%;
-  }
-  
-  .image-wrapper {
-    /* 🔧 Removed absolute positioning to avoid covering text */
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-left: 80px;
-
-    /* 🔧 Added margin-top to simulate visual separation */
-    margin-top: -200px;
-    position: absolute;
-    z-index: 1;
-  }
-  .image-box {
-    position: relative; /* Make captions stick to this box */
-    width: 300px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .caption {
-    position: absolute;
-    bottom: -33px; /* stick to bottom of the image */
-    height: 80px;
-    width: 250px;
-    left: 25px;
-    background-color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  
-  .image-box img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    display: block;
-  }
-
-  
-  .caption h4 {
-    font-size: 16px;
-    font-weight: bold;
-    color: black;
-    text-align: center;
-  }
-  
-  .caption p {
-    font-size: 14px;
-    color: #333;
-    text-align: center;
-  }
 
  /* footer section  */
 .footer {

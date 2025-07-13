@@ -1,370 +1,400 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+</head>
+
 <body>
-    <div class="image-top">
-        <div class="navbar">
-            <img src="pics/logo.png" alt="">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="pricing.html">Pricing</a>
-            <a href="#">Pages</a>
-            <a href="#">Blog </a>
-            <a href="contact.html">Contact</a>
+    <!-- Top Hero Section with Navbar -->
+    <div class="h-[500px] w-full bg-[url('pics/image4.jpg')] bg-no-repeat bg-fixed bg-cover bg-center">
+        <!-- Navbar -->
+        <div class="border-b border-white sticky top-0 z-50 bg-black/40 backdrop-blur-sm">
+            <div class="flex items-center justify-between px-4 md:px-12 py-2">
+                <!-- Logo -->
+                <img src="pics/logo.png" alt="" class="h-[80px] object-cover rounded-[10px]">
 
+                <!-- Hamburger Icon -->
+                <button id="menu-btn" class="text-white text-2xl md:hidden">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Nav Links (desktop only) -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="no-underline text-white font-bold text-[15px] hover:text-[#b67f27]">Home</a>
+                    <a href="about.html"
+                        class="no-underline text-white font-bold text-[15px] hover:text-[#b67f27]">About</a>
+                    <a href="services.html"
+                        class="no-underline text-white font-bold text-[15px] hover:text-[#b67f27]">Services</a>
+                    <a href="pricing.html"
+                        class="no-underline text-white font-bold text-[15px] hover:text-[#b67f27]">Pricing</a>
+                    <a href="#" class="no-underline text-white font-bold text-[15px] hover:text-[#b67f27]">Pages</a>
+                    <a href="#" class="no-underline text-white font-bold text-[15px] hover:text-[#b67f27]">Blog</a>
+                    <a href="contact.html"
+                        class="no-underline text-white font-bold text-[15px] hover:text-[#b67f27]">Contact</a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div id="mobile-menu" class="hidden flex flex-col space-y-3 px-6 pb-4 md:hidden">
+                <a href="index.html" class="text-white font-bold text-[15px] hover:text-[#b67f27]">Home</a>
+                <a href="about.html" class="text-white font-bold text-[15px] hover:text-[#b67f27]">About</a>
+                <a href="services.html" class="text-white font-bold text-[15px] hover:text-[#b67f27]">Services</a>
+                <a href="pricing.html" class="text-white font-bold text-[15px] hover:text-[#b67f27]">Pricing</a>
+                <a href="#" class="text-white font-bold text-[15px] hover:text-[#b67f27]">Pages</a>
+                <a href="#" class="text-white font-bold text-[15px] hover:text-[#b67f27]">Blog</a>
+                <a href="contact.html" class="text-white font-bold text-[15px] hover:text-[#b67f27]">Contact</a>
+            </div>
         </div>
-        <div class="salon-description">
-            <h5>Stay Sharp,Stay Strong</h5>
-            <h1>NYC'S FAVOURITE <br>BARBER SHOP.</h1>
-            <h5>BROADWAY ST,NYC.APPOINTMENT:855 100 4444</h5>
-            <button>BOOK APPOINTMENT</button>
 
+        <!-- Salon Description -->
+        <div class="text-white flex flex-col items-center text-center px-4 py-12">
+            <h5 class="text-sm">Stay Sharp, Stay Strong</h5>
+            <h1 class="mt-6 text-[35px] sm:text-[45px] md:text-[55px] font-extrabold leading-tight">
+                NYC'S FAVOURITE <br> BARBER SHOP.
+            </h1>
+            <h5 class="mt-4 text-sm">BROADWAY ST, NYC. APPOINTMENT: 855 100 4444</h5>
+            <button
+                class="mt-6 bg-white text-black h-[50px] w-[200px] font-extrabold transition-all duration-1000 hover:bg-[#8c6c4e] hover:text-white">
+                BOOK APPOINTMENT
+            </button>
         </div>
     </div>
-    <div class="white">
-        <div class="since-portion">
-            <h5>
-                SINCE 2006
-            </h5>
-            <h1>
-                Perukar Barber <br> Shop
-            </h1>
-            <p>
-                Come experience a unique and edgy barbershop for all your hair and beard needs. ravida haretra nuam enim mi obortis eset uctus enec accumsan eu justo alisuame amet auctor orci donec vitae vehicula risus.
+
+
+
+    <!-- Since Section -->
+    <div class="bg-[rgba(245,222,179,0.3)] flex flex-col lg:flex-row justify-between items-center px-6 py-12 gap-10">
+        <!-- Left Text Portion -->
+        <div class="w-full lg:w-[45%]">
+            <h5 class="text-[#b67f27] mb-4">SINCE 2006</h5>
+            <h1 class="font-extrabold text-[30px] sm:text-[35px] md:text-[40px]">Perukar Barber <br> Shop</h1>
+            <p class="mt-6 opacity-70 text-[15px] leading-relaxed">
+                Come experience a unique and edgy barbershop for all your hair and beard needs. ravida haretra nuam enim
+                mi obortis eset uctus enec accumsan eu justo alisuame amet auctor orci donec vitae vehicula risus.
                 <br><br>
-    
-                Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit amet auctor orci done vitae risus duise nisan sapien silver on the accumsan id mauris apien.
+                Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit amet
+                auctor orci done vitae risus duise nisan sapien silver on the accumsan id mauris apien.
                 <br><br>
-    
-                We're professional and certified barbers
-                <br>
-    
-                We use quality products to make you look perfect
-                 <br>
+                We're professional and certified barbers <br>
+                We use quality products to make you look perfect <br>
                 We care about our customers satisfaction
             </p>
-            
-        </div>
-        <div class="images">
-            <img src="pics/front.jpg" alt="" class="front" >
-            <img src="pics/image3.jpg" alt="" class="back">
         </div>
 
-
+        <!-- Right Image Portion -->
+        <div class="relative w-full lg:w-[45%] h-[300px] lg:h-[300px] flex justify-center">
+            <img src="pics/front.jpg" alt="" class="h-[200px] w-[150px] object-cover absolute top-10 left-10">
+            <img src="pics/image3.jpg" alt="" class="h-[200px] w-[150px] object-cover absolute top-0 left-20">
+        </div>
     </div>
-    <!-- working section starts from here -->
-    <div class="working">
-        <div class="first-working">
-            <h1>Cuts</h1>
-            <p>
-                <i class="fa-solid fa-scissors"></i>
+
+    <!-- Working Section -->
+    <div class="bg-[rgba(245,222,179,0.3)] flex flex-col md:flex-row justify-center items-center py-10 px-6 gap-10">
+        <div class="h-auto w-[250px]">
+            <h1 class="text-2xl font-bold">Cuts</h1>
+            <p class="mt-5 opacity-70 text-[15px]">
+                <i class="fa-solid fa-scissors text-[20px] mr-2"></i>
                 Cuts ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis monte.
             </p>
-            
         </div>
-        <div class="second-working">
-            <h1>Fades</h1>
-            <p>
+        <div class="h-auto w-[250px]">
+            <h1 class="text-2xl font-bold">Fades</h1>
+            <p class="mt-5 opacity-70 text-[15px]">
                 Fades ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis monte.
             </p>
         </div>
-        <div class="third-working">
-            <h1>Shaves</h1>
-            <p>
+        <div class="h-auto w-[250px]">
+            <h1 class="text-2xl font-bold">Shaves</h1>
+            <p class="mt-5 opacity-70 text-[15px]">
                 Shaves ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis monte.
             </p>
         </div>
     </div>
-    <!-- experience -->
-    <div class="experience">
-        <div class="experience-image">
-            <img src="pics/front.jpg" alt="" class="front" >
 
+    <!-- Experience Section -->
+    <div class="flex flex-col lg:flex-row items-center gap-10 px-6 py-12 bg-black text-white">
+        <div class="w-full lg:w-[40%]">
+            <img src="pics/front.jpg" alt=""
+                class="h-[300px] sm:h-[400px] w-full max-w-[350px] object-cover object-center mx-auto">
         </div>
-        <div class="experience-description">
-            <h5>17 Year of Experience</h5>
-            <h1>Making people look <br> awesome since 2006</h1>
-            <p>Come experience a unique and edgy barbershop for all your hair and beard needs. Vulputate ons amet ravida haretra nuam the drana miss uctus enec accumsan justo aliquam sit amet auctor orci done vitae risus duise nunc sapien.</p>
-            <p class="reference">
-                Barber,Founder
-                <br>
+        <div class="w-full lg:w-[55%]">
+            <h5 class="text-[15px] font-extrabold text-[#746144] mt-6 lg:mt-[70px]">17 Year of Experience</h5>
+            <h1 class="text-[30px] sm:text-[40px] md:text-[45px] font-extrabold leading-tight mt-2">
+                Making people look <br> awesome since 2006
+            </h1>
+            <p class="mt-[30px] text-[15px] leading-relaxed">
+                Come experience a unique and edgy barbershop for all your hair and beard needs. Vulputate ons amet
+                ravida
+                haretra nuam the drana miss uctus enec accumsan justo aliquam sit amet auctor orci done vitae risus
+                duise
+                nunc sapien.
+            </p>
+            <p class="mt-[30px] text-[#746144] font-medium text-[16px]">
+                Barber, Founder<br>
                 Harold Brown
             </p>
         </div>
+    </div>
 
-    </div>
-    <div class="services">
+    <!-- Services Section -->
+    <div class="bg-[rgba(255,228,196,0.3)] w-full text-center py-10 px-4 overflow-hidden">
         <div>
-            <h5>WHAT WE'RE OFFERING</h5>
-            <h1>Baber Services</h1>
+            <h5 class="text-[#746144] font-extrabold mt-[50px]">WHAT WE'RE OFFERING</h5>
+            <h1 class="text-[35px] md:text-[50px] font-black mb-[35px]">Baber Services</h1>
         </div>
-        <div class="images-container">
-            <div class="image1">
-                <h2>Hair Cut</h2>
+        <div class="flex flex-wrap justify-center gap-5">
+            <div
+                class="bg-[url('pics/image1.jpg')] bg-cover bg-center text-white font-black text-[20px] h-[300px] w-[90%] sm:w-[300px] flex items-end justify-center">
+                <h2 class="mb-6 border-b-2 border-[#746144]">Hair Cut</h2>
             </div>
-            <div class="image2">
-                <h2>Beard Trim</h2>
+            <div
+                class="bg-[url('pics/image5.jpg')] bg-cover bg-center text-white font-black text-[20px] h-[300px] w-[90%] sm:w-[300px] flex items-end justify-center">
+                <h2 class="mb-6 border-b-2 border-[#746144]">Beard Trim</h2>
             </div>
-            <div class="image3">
-                <h2>Hair Wash</h2>
+            <div
+                class="bg-[url('pics/image2.jpg')] bg-cover bg-center text-white font-black text-[20px] h-[300px] w-[90%] sm:w-[300px] flex items-end justify-center">
+                <h2 class="mb-6 border-b-2 border-[#746144]">Hair Wash</h2>
             </div>
         </div>
-        
     </div>
-    <!-- rating section -->
-    <div class="rating">
-        <div>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-            
+
+    <!-- Rating Section -->
+    <div
+        class="bg-[url('pics/image6.jpg')] w-full flex flex-col items-center justify-center bg-cover bg-center px-4 py-16">
+        <div class="text-[#746144] text-[25px] space-x-1">
+            <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
         </div>
-        <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, nam culpa! Explicabo quasi quos, nesciunt esse inventore excepturi quo distinctio tenetur cum odit aliquam sint fuga quisquam officia quia temporibus?
+        <p class="text-white max-w-[90%] sm:max-w-[500px] mt-5 text-center text-[15px] leading-relaxed">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, nam culpa! Explicabo quasi quos, nesciunt
+            esse
+            inventore excepturi quo distinctio tenetur cum odit aliquam sint fuga quisquam officia quia temporibus?
         </p>
-        <div class="rating-img">
-            <img src="pics/onwers.jpg" alt="">
-            <h5>TOM CURRUN</h5>
-            <p>Customer reviews</p>
+        <div class="text-center mt-6">
+            <img src="pics/onwers.jpg" alt="" class="h-[50px] w-[50px] rounded-full mx-auto mb-2">
+            <h5 class="text-white font-extrabold">TOM CURRUN</h5>
+            <p class="text-white text-sm">Customer reviews</p>
         </div>
     </div>
-    <!-- video section  -->
-    <div class="video">
-        <h1>Watch Our</h1>
-        <h1>Barbershop Promo</h1>
-        <h1>Video</h1>
-        <i class="fa-light fa-play"></i>
-        
+
+    <!-- Video Section -->
+    <div
+        class="bg-[url('pics/image5.jpg')] bg-fixed bg-center bg-cover w-full flex flex-col justify-center items-center py-24 px-4">
+        <i class="fa-solid fa-play text-white text-[30px] p-5"></i>
+        <h1 class="text-white font-black text-[30px] sm:text-[45px] mt-4 text-center">Watch Our Promo</h1>
     </div>
-    
-    <!-- pricing section  -->
-   <div class="pricing">
-    <div class="pricing-headings">
-        <h6>PRICING PLAN</h6>
-        <h1>Barber Pricing</h1>
+
+    <!-- Pricing Section -->
+    <div class="w-full bg-[rgba(255,228,196,0.3)] flex flex-col justify-center items-center py-12 px-4">
+        <div class="text-center mb-6">
+            <h6 class="tracking-[4px] text-[#746144] font-bold text-[11px]">PRICING PLAN</h6>
+            <h1 class="text-[30px] sm:text-[45px] font-extrabold">Barber Pricing</h1>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 w-full max-w-[1000px]">
+            <!-- Pricing Item -->
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Wash and Cut</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte....................</span>
+                    <span class="text-[#746144] font-extrabold">$20</span>
+                </div>
+            </div>
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Wash and Style</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte....................</span>
+                    <span class="text-[#746144] font-extrabold">$10</span>
+                </div>
+            </div>
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Head Shave with Razor</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte....................</span>
+                    <span class="text-[#746144] font-extrabold">$30</span>
+                </div>
+            </div>
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Short Beard Tidy</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte.</span>
+                    <span class="text-[#746144] font-extrabold">$15</span>
+                </div>
+            </div>
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Long Hair</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte....................</span>
+                    <span class="text-[#746144] font-extrabold">$45</span>
+                </div>
+            </div>
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Large Beard Trim</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte....................</span>
+                    <span class="text-[#746144] font-extrabold">$25</span>
+                </div>
+            </div>
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Children Wash & Cut</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte....................</span>
+                    <span class="text-[#746144] font-extrabold">$25</span>
+                </div>
+            </div>
+            <div class="w-full sm:w-[45%]">
+                <h5 class="text-[#746144] font-extrabold">Luxury Full Service</h5>
+                <div class="flex justify-between">
+                    <span>Lorem nestibulum sceisue can varius the dis monte....................</span>
+                    <span class="text-[#746144] font-extrabold">$60</span>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="pricing-detail">
-        <div class="outer-most">
-            <h5>Wash and Cut</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.................... 
-                <span class="inner">$20</span>
+
+    <!-- Booking Section -->
+    <div
+        class="bg-[url('pics/librarynew.jpg')] bg-cover bg-no-repeat flex flex-col lg:flex-row justify-around items-center px-4 py-12">
+        <div class="text-white mb-10 lg:mb-0">
+            <div class="text-[#746144] text-[25px] space-x-1 mb-2">
+                <i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i><i
+                    class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i>
             </div>
-        </div>
-        <div class="outer-most">
-            <h5>Wash and Style</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.................... 
-                <span class="inner">$10</span>
-            </div>
-        </div>
-        <div class="outer-most">
-            <h5>Head Shave with Razor</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.................... 
-                <span class="inner">$30</span>
-            </div>
-        </div>
-        <div class="outer-most">
-            <h5>Short Beard Tidy</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.
-                <span class="inner">$15</span>
-            </div>
-        </div>
-        <div class="outer-most">
-            <h5>Long Hair</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.................... 
-                <span class="inner">$45</span>
-            </div>
-        </div>
-        <div class="outer-most">
-            <h5>Large Beard Trim</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.................... 
-                <span class="inner">$25</span>
-            </div>
-        </div>
-        <div class="outer-most">
-            <h5>Children Wash & Cut</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.................... 
-                <span class="inner">$25</span>
-            </div>
-        </div>
-        <div class="outer-most">
-            <h5>Luxury Full Service</h5>
-            <div class="outer">
-                Lorem nestibulum sceisue can varius the dis monte.................... 
-                <span class="inner">$60</span>
-            </div>
-        </div>
-    </div>
-  </div> 
- <!-- hair stylist portion -->
-  <div class="container">
-         <div class="black-section">
-            <h6>OUR BARBERS</h6> 
-            <h1>Hair Stylist</h1>
+            <h1 class="text-[30px] sm:text-[35px] font-black">We Are Best Barbers & <br>Hair Cutting Salon at <br> NYC.
+            </h1>
+            <h3 class="text-[#b67f27] font-bold mt-4 ml-2">Appointment</h3>
+            <h2 class="ml-2">855 100 4444</h2>
         </div>
 
-         <div class="container">
-            <div class="black-section"></div>
-          
-            <div class="image-wrapper">
-              <div class="image-box">
-                <img src="pics/barber1.jpg" alt="Helen Brown">
-                <div class="caption">
-                  <h4>Helen Brown</h4>
-                  <p>Barber</p>
+        <!-- Booking Form -->
+        <div class="bg-[#f4ede5] p-6 sm:p-8 w-full max-w-[350px] shadow-md">
+            <h1 class="text-[25px] sm:text-[30px] font-black text-center mb-5">Make An Appointment</h1>
+            <form class="flex flex-col gap-4">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="text" placeholder="NAME" class="flex-1 p-2 text-[16px] border border-gray-300 rounded">
+                    <input type="number" placeholder="PHONE"
+                        class="flex-1 p-2 text-[16px] border border-gray-300 rounded">
                 </div>
-              </div>
-          
-              <div class="image-box">
-                <img src="pics/baber2.webp" alt="Philip Brown">
-                <div class="caption">
-                  <h4>Philip Brown</h4>
-                  <p>Barber</p>
-                </div>
-              </div>
-          
-              <div class="image-box">
-                <img src="pics/barber2.webp" alt="Stephen Martin">
-                <div class="caption">
-                  <h4>Stephen Martin</h4>
-                  <p>Stylist</p>
-                </div>
-              </div>
-            </div>
-          
-            <div class="white-section"></div>
-          </div>
-          
-        
-         <div class="white-section"></div>
-  </div>
-    <!-- booking section started  -->
-    <div class="booking">
-        <div class="rating-box">
-
-            <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            </div>
-            <h1>
-                We Are Best Barbers & <br>Hair Cutting Salon at <br> NYC.
-            </h1>
-            <h3>
-                Appointment
-            </h3>
-            <h2>855 100 4444</h2>
-        </div>
-        <div class="booking-box">
-            <h1>
-                Make An Appointment
-            </h1>
-            <form action="">
-                <div class="input-row">
-                    <input type="text" name="name" id="" placeholder="NAME">
-                    <input type="number" name="phone" id="" placeholder="PHONE">
-                </div>
-                <div class="input-row">
-                    <input type="date" name="date" id="" placeholder="DATE">
-                    <select name="timimg" id="">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="date" class="flex-1 p-2 text-[16px] border border-gray-300 rounded">
+                    <select class="flex-1 p-2 text-[16px] border border-gray-300 rounded">
                         <option value="Time">Time</option>
-                        <option value="10:00 am">10:00 am</option>
-                        <option value="11:00 am">11:00 am</option>
-                        <option value="12:00 pm">12:00 pm</option>
-                        <option value="14:00 pm">14:00 pm</option>
-                        <option value="16:00 pm">16:00 pm</option>
-                        <option value="18:00 pm">18:00 pm</option>
-                        <option value="20:00 pm">20:00 pm</option>
+                        <option>10:00 am</option>
+                        <option>11:00 am</option>
+                        <option>12:00 pm</option>
+                        <option>14:00 pm</option>
+                        <option>16:00 pm</option>
+                        <option>18:00 pm</option>
+                        <option>20:00 pm</option>
                     </select>
                 </div>
-                <div class="input-row">  
-                    <select name="Services" id="">
-                        <option value="Services">Services</option>
-                        <option value="Hiar Styling">Hiar Styling</option>
-                        <option value="Face Mas">Face Mask</option>
-                        <option value="Shaving">Shaving</option>
-                        <option value="Bread Triming">Bread Triming</option>
-                        <option value="Hiar Wash">Hiar Wash</option>
-                        
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <select class="flex-1 p-2 text-[16px] border border-gray-300 rounded">
+                        <option>Services</option>
+                        <option>Hair Styling</option>
+                        <option>Face Mask</option>
+                        <option>Shaving</option>
+                        <option>Bread Trimming</option>
+                        <option>Hair Wash</option>
                     </select>
-                    
-                    <select name="Services" id="">
-                        <option value="Choose Barber">Choose Barber</option>
-                        <option value="Philips">Philips</option>
-                        <option value="Stephen">Stephen</option>
-                        <option value="Dennis">Dennis</option>
-                        <option value="Helen">Helen</option>
+                    <select class="flex-1 p-2 text-[16px] border border-gray-300 rounded">
+                        <option>Choose Barber</option>
+                        <option>Philips</option>
+                        <option>Stephen</option>
+                        <option>Dennis</option>
+                        <option>Helen</option>
                     </select>
                 </div>
-                <button type="submit">Make Appointment</button>
+                <button type="submit"
+                    class="bg-[#a0835b] text-white p-2 text-[16px] uppercase tracking-wider hover:bg-[#8a6d47] transition duration-300 transform hover:-translate-y-2">
+                    Make Appointment
+                </button>
             </form>
+        </div>
+    </div>
 
+    <!-- Footer Section -->
+    <footer class="bg-[#1a120e] text-[#f0e6da] font-sans pt-10 px-5">
+        <div class="max-w-[1200px] mx-auto flex flex-wrap justify-center lg:justify-evenly">
+            <!-- Contact Column -->
+            <div class="w-full sm:w-[300px] m-5">
+                <h3 class="text-white text-[20px] mb-4">Contact</h3>
+                <p class="text-[16px] leading-relaxed text-[#d5c9be]">
+                    0665 Broadway NY, New York<br />10001<br />United States of America
+                </p>
+                <p class="font-bold text-[16px] text-[#d3a86c] mt-2">855 100 4444</p>
+                <p class="text-[16px] text-[#d5c9be]">
+                    <a href="mailto:info@barber.com">info@barber.com</a>
+                </p>
+                <div class="mt-3 space-x-3 text-[16px] text-[#f0e6da] cursor-pointer">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </div>
+            </div>
+
+            <!-- Work Time Column -->
+            <div class="w-full sm:w-[300px] m-5">
+                <h3 class="text-white text-[20px] mb-4">Work Time</h3>
+                <ul class="text-[16px] text-[#d5c9be] leading-relaxed">
+                    <li>Monday 10:00 - 20:00</li>
+                    <li>Tuesday 10:00 - 20:00</li>
+                    <li>Wednesday 10:00 - 20:00</li>
+                    <li>Thursday 10:00 - 20:00</li>
+                    <li>Friday 10:00 - 20:00</li>
+                    <li>Saturday 10:00 - 20:00</li>
+                    <li>Weekend: Closed</li>
+                </ul>
+            </div>
+
+            <!-- Subscribe Column -->
+            <div class="w-full sm:w-[300px] m-5">
+                <h3 class="text-white text-[20px] mb-4">Subscribe</h3>
+                <p class="text-[16px] text-[#d5c9be] leading-relaxed">
+                    Subscribe to take advantage of our campaigns and gift certificates.
+                </p>
+                <form class="flex mt-4 border border-[#a07e5b] max-w-full">
+                    <input type="email" placeholder="Your email"
+                        class="flex-1 px-4 py-3 bg-transparent text-white text-[14px] placeholder-[#ccc] outline-none" />
+                    <button type="submit"
+                        class="px-4 sm:px-6 py-3 bg-[#a07e5b] text-white font-bold uppercase text-[14px] hover:bg-[#8c6c4e] transition duration-300">
+                        Subscribe
+                    </button>
+                </form>
+            </div>
         </div>
 
-     </div>  
-
-<!-- footer section  -->
-<footer class="footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <h3>Contact</h3>
-        <p>0665 Broadway NY, New York<br>10001<br>United States of America</p>
-        <p class="phone">855 100 4444</p>
-        <p><a href="mailto:info@barber.com">info@barber.com</a></p>
-        <div class="social-icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
+        <!-- Footer Bottom -->
+        <div class="border-t border-[#333] mt-10 py-4 text-center">
+            <p class="text-[12px] text-[#aaa]">
+                2025 © All rights reserved. Designed by DuruThemes
+            </p>
         </div>
-      </div>
-  
-      <div class="footer-column">
-        <h3>Work Time</h3>
-        <ul>
-          <li>Monday		10:00 - 20:00</li>
-          <li>Tuesday		10:00 - 20:00</li>
-          <li>Wednesday  	10:00 - 20:00</li>
-          <li>Thursday		10:00 - 20:00</li>
-          <li>Friday		10:00 - 20:00</li>
-          <li>Saturday		10:00 - 20:00</li>
-          <li>Weekend: Closed</li>
-        </ul>
-      </div>
-  
-      <div class="footer-column">
-        <h3>Subscribe</h3>
-        <p>Subscribe to take advantage of our campaigns and gift certificates.</p>
-        <form class="subscribe-form">
-            <input type="email" placeholder="Your email" required />
-            <button type="submit">
-                SUBSCRIBE
-            </button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>2025 © All rights reserved. Designed by DuruThemes</p>
-    </div>
-  </footer>
+    </footer>
+
+
+    <!-- Script for Mobile Toggle -->
+    <script>
+        const menuBtn = document.getElementById("menu-btn");
+        const mobileMenu = document.getElementById("mobile-menu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
+
+
 </body>
+
 </html>

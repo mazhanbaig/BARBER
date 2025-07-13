@@ -199,6 +199,22 @@ body{
 }
  /* hair stylist section */
  /* hair stylist portion  */
+.image-box-back{
+  display: none;
+  height: 100%;
+   width: 300px;
+}
+.image-box:hover{
+    transform: rotateY('180deg');
+}
+.image-box-front .image-box-back{
+  display: inline-block;
+}
+.image-box-front{
+  width: 300px;
+  height: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
