@@ -1,252 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <link rel="stylesheet" href="pricing.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing | Perukar Barbershop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
 
-        <div class="image-top">
-            <div class="navbar">
-                <img src="pics/logo.png" alt="">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="#">Pages</a>
-                <a href="#">Blog</a>
-                <a href="contact.html">Contact </a>
-                
-            </div>
-            <div class="top">
-                <h3>OUR PRICE LIST</h3>
-                <h1>Pricing Plan</h1>
-            </div>
+<body class="bg-[#0e0d0d] text-white font-sans">
+    <!-- Navbar -->
+    <header class="bg-black/60 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <img src="pics/logo.png" alt="Logo" class="h-16 rounded-lg" />
+            <nav class="space-x-6 hidden md:flex">
+                <a href="index.html" class="hover:text-yellow-500">Home</a>
+                <a href="about.html" class="hover:text-yellow-500">About</a>
+                <a href="services.html" class="hover:text-yellow-500">Services</a>
+                <a href="pricing.html" class="text-yellow-500 font-semibold">Pricing</a>
+                <a href="contact.html" class="hover:text-yellow-500">Contact</a>
+            </nav>
+            <div class="md:hidden text-xl"><i class="fas fa-bars"></i></div>
         </div>
-        
     </header>
-    <!-- header section ended -->
-     <div class="pricing-section">
 
-        <div class="pricing-container">
-            <div class="image1">
-                <h1>
-                    Hair Cut
-                </h1>
+    <!-- Hero -->
+    <section class="h-[400px] bg-cover bg-center relative flex items-center justify-center"
+        style="background-image: url('pics/new-image-for-services.jpg')">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="z-10 text-center">
+            <h3 class="text-yellow-600 text-sm font-semibold mb-2">PRICING</h3>
+            <h1 class="text-4xl md:text-6xl font-bold">Our Pricing Plans</h1>
+        </div>
+    </section>
+
+    <!-- Pricing Cards -->
+    <section class="py-24 px-6 md:px-20 bg-black">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-5xl font-bold">Affordable Grooming Packages</h2>
+            <p class="text-gray-400 mt-4 max-w-xl mx-auto">Choose the plan that fits your style. All cuts come with
+                premium products and a great experience.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <!-- Card 1 -->
+            <div class="bg-[#1a1a1a] rounded-lg p-6 border border-white/10 hover:border-yellow-600 transition">
+                <h3 class="text-2xl font-bold mb-2">Basic Cut</h3>
+                <p class="text-gray-400 mb-6">Clean and classic haircut.</p>
+                <div class="text-yellow-500 text-3xl font-extrabold mb-4">$20</div>
+                <ul class="text-gray-300 mb-6 space-y-2">
+                    <li>✔ Haircut & styling</li>
+                    <li>✔ Neck shave</li>
+                    <li>✔ 20 minutes</li>
+                </ul>
+                <button
+                    class="w-full py-2 mt-4 bg-yellow-600 text-black font-bold rounded hover:bg-yellow-500 transition">Book
+                    Now</button>
             </div>
-            <div class="pricing-details">
-                <p>
-                    <div class="inner-top">
-                        <h3>Perukar HairCut</h3>......................<h4>$30</h4>
-                    </div>
-                    Haircut, shampoo, scalp massage, hot towel face treatment.
 
-                </p>
-                <p>
-                    <div class="inner-top">
-                        <h3>Haircut with Skin Fade</h3>......................<h4>$20</h4>
-                    </div>
-                    Haircut, shampoo, scalp massage, hot towel face treatment.
+            <!-- Card 2 -->
+            <div class="bg-[#1a1a1a] rounded-lg p-6 border border-yellow-600 scale-105 shadow-lg">
+                <h3 class="text-2xl font-bold mb-2">Premium Package</h3>
+                <p class="text-gray-400 mb-6">For the gentleman who wants the best.</p>
+                <div class="text-yellow-500 text-3xl font-extrabold mb-4">$40</div>
+                <ul class="text-gray-300 mb-6 space-y-2">
+                    <li>✔ Haircut & skin fade</li>
+                    <li>✔ Beard trim & style</li>
+                    <li>✔ Hot towel finish</li>
+                    <li>✔ 45 minutes</li>
+                </ul>
+                <button
+                    class="w-full py-2 mt-4 bg-yellow-600 text-black font-bold rounded hover:bg-yellow-500 transition">Book
+                    Now</button>
+            </div>
 
-                </p>
-                <p>
-                    <div class="inner-top">
-                        <h3>Haircut Razor skin fade</h3>......................<h4>$15</h4>
-                    </div>
-                    Haircut, shampoo, scalp massage, hot towel face treatment.
-
-                </p>
-   
-
+            <!-- Card 3 -->
+            <div class="bg-[#1a1a1a] rounded-lg p-6 border border-white/10 hover:border-yellow-600 transition">
+                <h3 class="text-2xl font-bold mb-2">Beard Trim</h3>
+                <p class="text-gray-400 mb-6">Clean up and shape your beard.</p>
+                <div class="text-yellow-500 text-3xl font-extrabold mb-4">$15</div>
+                <ul class="text-gray-300 mb-6 space-y-2">
+                    <li>✔ Beard line-up</li>
+                    <li>✔ Razor or clipper trim</li>
+                    <li>✔ 15–20 minutes</li>
+                </ul>
+                <button
+                    class="w-full py-2 mt-4 bg-yellow-600 text-black font-bold rounded hover:bg-yellow-500 transition">Book
+                    Now</button>
             </div>
         </div>
-        <!-- second -->
-        <div class="pricing-container">
+    </section>
 
-            <div class="pricing-details">
-                <p>
-                    <div class="inner-top">
-                         <h3>Basic Beard Trim</h3>.....................<h4>$25</h4>
-                    </div>
-                Haircut, shampoo, scalp massage, hot towel face treatment.
-                
-                </p>
-                <p>
-                     <div class="inner-top">
-                         <h3>Beard Trim & Line Up</h3>.....................<h4>$20</h4>
-                     </div>
-                Haircut, shampoo, scalp massage, hot towel face treatment.
-                
-                </p>
-                <p>
-                    <div class="inner-top">
-                        <h3>Electric Razor</h3>.....................<h4>$15</h4>
-                    </div>
-                Haircut, shampoo, scalp massage, hot towel face treatment.
-                
-               </p>       
-            </div>
-            <div class="image2">
-                <h1>
-                    Beard
-                </h1>
-            </div>
-            
-        </div>
-        <!-- third -->
-        <div class="pricing-container">
-
-            <div class="image3">
-                <h1>
-                    Shaves
-                </h1>
-            </div>
-            <div class="pricing-details">
-             <p>
-                    <div class="inner-top">
-                            <h3>Full Face Shave</h3>.....................<h4>$20</h4>
-                    </div>
-                Haircut, shampoo, scalp massage, hot towel face treatment.
-                
-             </p>
-             <p>
-                <div class="inner-top">
-                    <h3>Partial Face Shave</h3>.....................<h4>$15</h4>
+    <!-- Footer (same layout as About) -->
+    <footer class="bg-black py-12 px-6 text-gray-300">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-10">
+            <!-- Contact -->
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Contact</h3>
+                <p>0665 Broadway NY, New York<br>10001, USA</p>
+                <p class="font-bold text-yellow-600 mt-3">855 100 4444</p>
+                <p><a href="mailto:info@barber.com">info@barber.com</a></p>
+                <div class="flex gap-4 mt-4 text-white text-lg">
+                    <i class="fa-brands fa-instagram cursor-pointer"></i>
+                    <i class="fa-brands fa-twitter cursor-pointer"></i>
+                    <i class="fa-brands fa-facebook cursor-pointer"></i>
                 </div>
-                Haircut, shampoo, scalp massage, hot towel face treatment.
-                
-             </p>
-             <p>
-                <div class="inner-top">
-                    <h3>Head Shavve</h3>.....................<h4>$25</h4>
-                </div>
-                Haircut, shampoo, scalp massage, hot towel face treatment.
-                
-              </p>
-            
-            
             </div>
-        
-        </div>
 
-     </div>
-
-     <!-- booking section started  -->
-     <div class="booking">
-        <div class="rating-box">
-
-            <div class="stars">
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+            <!-- Work Time -->
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Work Time</h3>
+                <ul class="space-y-1">
+                    <li>Mon–Sat: 10:00 - 20:00</li>
+                    <li>Sunday: Closed</li>
+                </ul>
             </div>
-            <h1>
-                We Are Best Barbers & <br>Hair Cutting Salon at <br> NYC.
-            </h1>
-            <h3>
-                Appointment
-            </h3>
-            <h2>855 100 4444</h2>
-        </div>
-        <div class="booking-box">
-            <h1>
-                Make An Appointment
-            </h1>
-            <form action="">
-                <div class="input-row">
-                    <input type="text" name="name" id="" placeholder="NAME">
-                    <input type="number" name="phone" id="" placeholder="PHONE">
-                </div>
-                <div class="input-row">
-                    <input type="date" name="date" id="" placeholder="DATE">
-                    <select name="timimg" id="">
-                        <option value="Time">Time</option>
-                        <option value="10:00 am">10:00 am</option>
-                        <option value="11:00 am">11:00 am</option>
-                        <option value="12:00 pm">12:00 pm</option>
-                        <option value="14:00 pm">14:00 pm</option>
-                        <option value="16:00 pm">16:00 pm</option>
-                        <option value="18:00 pm">18:00 pm</option>
-                        <option value="20:00 pm">20:00 pm</option>
-                    </select>
-                </div>
-                <div class="input-row">  
-                    <select name="Services" id="">
-                        <option value="Services">Services</option>
-                        <option value="Hiar Styling">Hiar Styling</option>
-                        <option value="Face Mas">Face Mask</option>
-                        <option value="Shaving">Shaving</option>
-                        <option value="Bread Triming">Bread Triming</option>
-                        <option value="Hiar Wash">Hiar Wash</option>
-                        
-                    </select>
-                    
-                    <select name="Services" id="">
-                        <option value="Choose Barber">Choose Barber</option>
-                        <option value="Philips">Philips</option>
-                        <option value="Stephen">Stephen</option>
-                        <option value="Dennis">Dennis</option>
-                        <option value="Helen">Helen</option>
-                    </select>
-                </div>
-                <button type="submit">Make Appointment</button>
-            </form>
 
-        </div>
-
-     </div>  
-     <!-- footer section -->
-     <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-column">
-            <h3>Contact</h3>
-            <p>0665 Broadway NY, New York<br>10001<br>United States of America</p>
-            <p class="phone">855 100 4444</p>
-            <p><a href="mailto:info@barber.com">info@barber.com</a></p>
-            <div class="social-icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
+            <!-- Subscribe -->
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Subscribe</h3>
+                <p>Join our newsletter for updates & offers.</p>
+                <form class="flex mt-4 border border-yellow-700 rounded overflow-hidden">
+                    <input type="email" placeholder="Your email"
+                        class="bg-transparent text-white px-4 py-2 w-full outline-none" required />
+                    <button type="submit" class="bg-yellow-600 px-5 hover:bg-yellow-700">Subscribe</button>
+                </form>
             </div>
-          </div>
-      
-          <div class="footer-column">
-            <h3>Work Time</h3>
-            <ul>
-              <li>Monday		10:00 - 20:00</li>
-              <li>Tuesday		10:00 - 20:00</li>
-              <li>Wednesday  	10:00 - 20:00</li>
-              <li>Thursday		10:00 - 20:00</li>
-              <li>Friday		10:00 - 20:00</li>
-              <li>Saturday		10:00 - 20:00</li>
-              <li>Weekend: Closed</li>
-            </ul>
-          </div>
-      
-          <div class="footer-column">
-            <h3>Subscribe</h3>
-            <p>Subscribe to take advantage of our campaigns and gift certificates.</p>
-            <form class="subscribe-form">
-                <input type="email" placeholder="Your email" required />
-                <button type="submit">
-                    SUBSCRIBE
-                </button>
-            </form>
-          </div>
         </div>
-        <div class="footer-bottom">
-          <p>2025 © All rights reserved. Designed by DuruThemes</p>
+
+        <div class="text-center mt-10 text-sm text-gray-500 border-t border-white/10 pt-4">
+            2025 © All rights reserved. Designed by DuruThemes
         </div>
-      </footer>
+    </footer>
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
 </body>
+
 </html>

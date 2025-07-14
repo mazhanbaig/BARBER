@@ -1,131 +1,186 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="services.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Perukar Barbershop</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
 
-        <div class="image-top">
-            <div class="navbar">
-                <img src="pics/logo.png" alt="">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="#">Pages</a>
-                <a href="#">Blog</a>
-                <a href="contact.html">Contact</a>
-                
-            </div>
-            <div class="about-top">
-                <h3>WHAT WE DO</h3>
-                <h1>Our Services</h1>
-            </div>
-        </div>
-        
-    </header>
-    <!-- contact form section  -->
-     <div class="">
+<body class="bg-[#0b0b0b] text-white font-sans">
 
-     </div>
-     <div class="contact">
-        <div class="getintouch">
-            <h5>CONTACT INFO</h5>
-            <h1>Get In Touch</h1>
-            <p class="para1">
-               Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit amet auctor orci done vitae.
-            </p>
-            <div>
-                <span>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <h4>Address</h4>
-                </span>
-                <p class="para2">0665 Broadway NY, 10001 USA</p>
-           </div>
-           <div>
-               <span>
-                   <i class="fa-solid fa-mobile-screen-button"></i>
-                   <h4>Phone</h4>
-               </span>
-               <p class="para2">855 100 4444</p>
-          </div>
-          <div>
-               <span>
-                  <i class="fa-solid fa-envelope"></i>
-                  <h4>Email</h4>
-               </span>
-               <p class="para2">info@barber.com</p>
-           </div>
-        </div>
-        <!-- form section  -->
-         <div class="contact-form">
-             <h1>Contact Form</h1>
-             <form action="">
-    
-                 <div class="input-row">
-                     <input type="text" name="name" placeholder="NAME" id="">
-                     <input type="number" placeholder="Phone" name="phone" id="">
-                 </div>
-                 <div class="input-row">
-                        <input type="email" placeholder="Email" name="email" id="">
-                        <input type="text" name="subject" placeholder="Subject" class="subject">
-                 </div>
-                 <textarea name="feedback" placeholder="FEEDBACK" id=""></textarea>
-                 <button>SEND MESSAGE</button>       
-             </form>
-         </div>
-        
+  <!-- Navbar -->
+  <header class="bg-black/60 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="index.html">
+        <img src="pics/logo.png" alt="Logo" class="h-14 md:h-16 rounded-lg" />
+      </a>
+      <nav class="space-x-6 hidden md:flex text-white font-medium">
+        <a href="index.html" class="hover:text-yellow-500 transition">Home</a>
+        <a href="about.html" class="hover:text-yellow-500 transition">About</a>
+        <a href="services.html" class="text-yellow-500 font-bold">Services</a>
+        <a href="pricing.html" class="hover:text-yellow-500 transition">Pricing</a>
+        <a href="contact.html" class="hover:text-yellow-500 transition">Contact</a>
+      </nav>
+      <div class="md:hidden text-2xl text-white cursor-pointer">
+        <i class="fas fa-bars"></i>
+      </div>
     </div>
+  </header>
 
-    <!-- footer section -->
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-column">
-        <h3>Contact</h3>
-        <p>0665 Broadway NY, New York<br>10001<br>United States of America</p>
-        <p class="phone">855 100 4444</p>
-        <p><a href="mailto:info@barber.com">info@barber.com</a></p>
-        <div class="social-icons">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-pinterest-p"></i>
+  <!-- Hero Section -->
+  <section class="relative h-[500px] bg-cover bg-center flex items-center justify-center text-center"
+    style="background-image: url('pics/image4.jpg')">
+    <div class="absolute inset-0 bg-black/65 "></div>
+    <div class="z-10 px-4">
+      <h3 class="text-yellow-500 text-sm tracking-wider mb-2">WHAT WE DO</h3>
+      <h1 class="text-4xl md:text-6xl font-black">Our Services</h1>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="py-20 px-6 bg-[#111]">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-yellow-500 text-sm mb-2 tracking-widest">OUR EXPERTISE</h2>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-10">Barber Services</h1>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Single Card -->
+        <div class="bg-[#1a1a1a] p-6 rounded-lg hover:shadow-xl hover:scale-105 transition">
+          <i class="fa-solid fa-scissors text-yellow-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Haircut</h3>
+          <p class="text-gray-400">Precision haircuts tailored to your style and look.</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded-lg hover:shadow-xl hover:scale-105 transition">
+          <i class="fa-solid fa-beard text-yellow-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Beard Trim</h3>
+          <p class="text-gray-400">Perfectly shaped beards to complement your face.</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded-lg hover:shadow-xl hover:scale-105 transition">
+          <i class="fa-solid fa-soap text-yellow-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Hair Wash</h3>
+          <p class="text-gray-400">Revitalizing wash and shampoo treatment.</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded-lg hover:shadow-xl hover:scale-105 transition">
+          <i class="fa-solid fa-razor text-yellow-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Shave</h3>
+          <p class="text-gray-400">Classic shaves with hot towels and straight razors.</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded-lg hover:shadow-xl hover:scale-105 transition">
+          <i class="fa-solid fa-masks-theater text-yellow-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Facial</h3>
+          <p class="text-gray-400">Rejuvenate your skin with professional treatments.</p>
+        </div>
+        <div class="bg-[#1a1a1a] p-6 rounded-lg hover:shadow-xl hover:scale-105 transition">
+          <i class="fa-solid fa-spray-can-sparkles text-yellow-500 text-3xl mb-4"></i>
+          <h3 class="text-xl font-bold mb-2">Styling</h3>
+          <p class="text-gray-400">Modern hairstyles to give you a fresh, bold look.</p>
         </div>
       </div>
-  
-      <div class="footer-column">
-        <h3>Work Time</h3>
-        <ul>
-          <li>Monday		10:00 - 20:00</li>
-          <li>Tuesday		10:00 - 20:00</li>
-          <li>Wednesday  	10:00 - 20:00</li>
-          <li>Thursday		10:00 - 20:00</li>
-          <li>Friday		10:00 - 20:00</li>
-          <li>Saturday		10:00 - 20:00</li>
-          <li>Weekend: Closed</li>
-        </ul>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="bg-[#101010] py-20 px-6" id="contact">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+      <!-- Info -->
+      <div>
+        <h3 class="text-yellow-500 text-sm mb-2">CONTACT INFO</h3>
+        <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+        <p class="text-gray-400 mb-6">We're here to answer your questions or book your visit.</p>
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <i class="fa-solid fa-location-dot text-yellow-500 text-xl"></i>
+            <div>
+              <h4 class="font-bold">Address</h4>
+              <p class="text-gray-400">0665 Broadway NY, 10001 USA</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fa-solid fa-phone text-yellow-500 text-xl"></i>
+            <div>
+              <h4 class="font-bold">Phone</h4>
+              <p class="text-gray-400">855 100 4444</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fa-solid fa-envelope text-yellow-500 text-xl"></i>
+            <div>
+              <h4 class="font-bold">Email</h4>
+              <p class="text-gray-400">info@barber.com</p>
+            </div>
+          </div>
+        </div>
       </div>
-  
-      <div class="footer-column">
-        <h3>Subscribe</h3>
-        <p>Subscribe to take advantage of our campaigns and gift certificates.</p>
-        <form class="subscribe-form">
-            <input type="email" placeholder="Your email" required />
-            <button type="submit">
-                SUBSCRIBE
-            </button>
+
+      <!-- Form -->
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Contact Form</h2>
+        <form class="space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="text" placeholder="Name" class="flex-1 p-3 bg-[#1a1a1a] border border-gray-600 rounded" />
+            <input type="text" placeholder="Phone" class="flex-1 p-3 bg-[#1a1a1a] border border-gray-600 rounded" />
+          </div>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="email" placeholder="Email" class="flex-1 p-3 bg-[#1a1a1a] border border-gray-600 rounded" />
+            <input type="text" placeholder="Subject" class="flex-1 p-3 bg-[#1a1a1a] border border-gray-600 rounded" />
+          </div>
+          <textarea rows="4" placeholder="Your message..."
+            class="w-full p-3 bg-[#1a1a1a] border border-gray-600 rounded"></textarea>
+          <button type="submit"
+            class="w-full bg-yellow-500 text-white font-bold py-3 rounded hover:bg-yellow-400 transition">SEND
+            MESSAGE</button>
         </form>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>2025 © All rights reserved. Designed by DuruThemes</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black py-12 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+      <div>
+        <h3 class="text-white font-bold mb-4">Contact</h3>
+        <p class="text-gray-400">0665 Broadway NY, New York<br>10001, USA</p>
+        <p class="text-yellow-500 font-bold mt-2">855 100 4444</p>
+        <p><a href="mailto:info@barber.com" class="text-gray-300">info@barber.com</a></p>
+        <div class="flex space-x-4 mt-4 text-white">
+          <i class="fab fa-instagram hover:text-yellow-500"></i>
+          <i class="fab fa-twitter hover:text-yellow-500"></i>
+          <i class="fab fa-facebook hover:text-yellow-500"></i>
+        </div>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Work Time</h3>
+        <ul class="text-gray-400 space-y-1">
+          <li>Mon–Sat: 10:00 - 20:00</li>
+          <li>Sunday: Closed</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white font-bold mb-4">Subscribe</h3>
+        <p class="text-gray-400">Get updates, offers, and event details via email.</p>
+        <form class="flex mt-4 border border-yellow-600 rounded overflow-hidden">
+          <input type="email" placeholder="Your email"
+            class="w-full px-4 py-2 bg-transparent text-white outline-none" />
+          <button type="submit" class="bg-yellow-600 px-5 hover:bg-yellow-500 text-white font-bold">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center text-sm text-gray-600 mt-10 border-t border-white/10 pt-4">
+      2025 © All rights reserved. Designed by DuruThemes
     </div>
   </footer>
-  
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+
 </body>
+
 </html>

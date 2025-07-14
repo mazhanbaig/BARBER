@@ -1,226 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="about.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perukar Barbershop</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
 
-        <div class="image-top">
-            <div class="navbar">
-                <img src="pics/logo.png" alt="">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="services.html">Services</a>
-                <a href="pricing.html">Pricing</a>
-                <a href="#">Pages</a>
-                <a href="#">Blog</a>
-                <a href="contact.html">Contact</a>
-                
-            </div>
-            <div class="about-top">
-                <h3>ABOUT US</h3>
-                <h1>Our History</h1>
-            </div>
+<body class="bg-[#0e0d0d] text-white font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-black/60 backdrop-blur-lg border-b border-white/10 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <img src="pics/logo.png" alt="Logo" class="h-16 rounded-lg" />
+            <nav class="space-x-6 hidden md:flex">
+                <a href="index.html" class="hover:text-yellow-500">Home</a>
+                <a href="about.html" class="hover:text-yellow-500">About</a>
+                <a href="services.html" class="hover:text-yellow-500">Services</a>
+                <a href="pricing.html" class="hover:text-yellow-500">Pricing</a>
+                <a href="contact.html" class="hover:text-yellow-500">Contact</a>
+            </nav>
+            <div class="md:hidden text-xl"><i class="fas fa-bars"></i></div>
         </div>
-        
     </header>
 
-    <!-- since portion -->
-     <main>
+    <!-- Hero / About Top -->
+    <section class="h-[500px] bg-cover bg-center relative flex flex-col justify-center items-center"
+        style="background-image: url('pics/new-image-for-services.jpg')">
+        <!-- <div class="absolute inset-0 bg-black/60"></div> -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
 
-         <div class="white">
-             <div class="since-portion">
-                 <h5>
-                     SINCE 2006
-                    </h5>
-                    <h1>
-                        Perukar Barber <br> Shop
-                    </h1>
-                    <p>
-                        Come experience a unique and edgy barbershop for all your hair and beard needs. ravida haretra nuam enim mi obortis eset uctus enec accumsan eu justo alisuame amet auctor orci donec vitae vehicula risus.
-                        <br><br>
-                        
-                        Barber utate ons amet ravida haretra nuam the duru miss uctus the drana accumsan justo aliquam sit amet auctor orci done vitae risus duise nisan sapien silver on the accumsan id mauris apien.
-                <br><br>
-                
-                We're professional and certified barbers
-                <br>
-                
-                We use quality products to make you look perfect
-                <br>
-                We care about our customers satisfaction
-            </p>
-            
+        <div class="z-10 text-center">
+            <h3 class="text-yellow-600 text-sm font-semibold mb-2">ABOUT US</h3>
+            <h1 class="text-4xl md:text-6xl font-bold">Our History</h1>
         </div>
-        <div class="images">
-            <img src="pics/front.jpg" alt="" class="front" >
-            <img src="pics/image3.jpg" alt="" class="back">
-        </div>
-    </div>
-    <!-- services ection starts from here -->
-    <div class="working">
-        <div class="first-working">
-            <h1>Cuts</h1>
-            <p>
-                <i class="fa-solid fa-scissors"></i>
-                Cuts ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis monte.
-            </p>
-            
-        </div>
-        <div class="second-working">
-            <h1>Fades</h1>
-            <p>
-                Fades ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis monte.
-            </p>
-        </div>
-        <div class="third-working">
-            <h1>Shaves</h1>
-            <p>
-                Shaves ut nisl quam nestibulum drana odio elementum sceisue the can golden varius the dis monte.
-            </p>
-        </div>
-    </div>
-    
-    <!-- experience section starts -->
-    <div class="experience">
-        <div class="experience-image">
-            <img src="pics/front.jpg" alt="" class="front" >
-            
-        </div>
-        <div class="experience-description">
-            <h5>17 Year of Experience</h5>
-            <h1>Making people look <br> awesome since 2006</h1>
-            <p>Come experience a unique and edgy barbershop for all your hair and beard needs. Vulputate ons amet ravida haretra nuam the drana miss uctus enec accumsan justo aliquam sit amet auctor orci done vitae risus duise nunc sapien.</p>
-            <p class="reference">
-                Barber,Founder
-                <br>
-                Harold Brown
-            </p>
-        </div>
-    </div>
-    <!-- video section -->
-    <div class="video">
-        <h1>Watch Our</h1>
-        <h1>Barbershop Promo</h1>
-        <h1>Video</h1>
-        <i class="fa-light fa-play"></i>
-        
-    </div>
-    
-    <!-- Hair stylist Section -->
-    
-    <div class="container">
-        <div class="black-section">
-            <h5>OUR BARBERS</h5>
-            <h1>Hair Stylist</h1>
-        </div>
-        
-            <div class="image-wrapper">
-                 <div class="image-box">
-                    <div class="image-box-front">
-                        <img src="pics/barber1.jpg" alt="Helen Brown">
-                        <div class="caption">
-                          <h4>Helen Brown</h4>
-                          <p>Barber</p>
-                         </div>
-                    </div>
-                    <div class="image-box-back">
-                        <h1>INFO:</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit culpa nam provident veniam magnam, ratione ut officiis omnis nihil dolorum sint ipsum ducimus sequi? Dolor veniam blanditiis officiis sint!
-                            Accusamus consequatur alias adipisci eaque tempore enim harum, aut reiciendis dolor necessitatibus provident ut dolorem consectetur, ratione dolorum facere maxime! Commodi nemo mag
-                        </p>
-                    </div>
-                 </div>
-                
-                <div class="image-box">
-                    <div class="image-box-front">
-                        <img src="pics/baber2.webp" alt="Philip Brown">
-                        <div class="caption">
-                            <h4>Philip Brown</h4>
-                            <p>Barber</p>
-                        </div>
-                    </div>
-                    <div class="image-box-back">
-                        <h1>INFO:</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit culpa nam provident veniam magnam, ratione ut officiis omnis nihil dolorum sint ipsum ducimus sequi? Dolor veniam blanditiis officiis sint!
-                            Accusamus consequatur alias adipisci eaque tempore enim harum, aut reiciendis dolor necessitatibus provident ut dolorem consectetur, ratione dolorum facere maxime! Commodi nemo mag
-                        </p>
-                    </div>
+    </section>
 
-                </div>
-                
-                <div class="image-box">
-                    <div class="image-box-front">
-                        <img src="pics/barber2.webp" alt="Stephen Martin">
-                        <div class="caption">
-                            <h4>Stephen Martin</h4>
-                            <p>Stylist</p>
-                        </div>
-                    </div>
-                    <div class="image-box-back">
-                        <h1>INFO:</h1>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sit culpa nam provident veniam magnam, ratione ut officiis omnis nihil dolorum sint ipsum ducimus sequi? Dolor veniam blanditiis officiis sint!
-                            Accusamus consequatur alias adipisci eaque tempore enim harum, aut reiciendis dolor necessitatibus provident ut dolorem consectetur, ratione dolorum facere maxime! Commodi nemo mag
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="white-section"></div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-column">
-            <h3>Contact</h3>
-            <p>0665 Broadway NY, New York<br>10001<br>United States of America</p>
-            <p class="phone">855 100 4444</p>
-            <p><a href="mailto:info@barber.com">info@barber.com</a></p>
-            <div class="social-icons">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
-            </div>
-          </div>
-      
-          <div class="footer-column">
-            <h3>Work Time</h3>
-            <ul>
-              <li>Monday		10:00 - 20:00</li>
-              <li>Tuesday		10:00 - 20:00</li>
-              <li>Wednesday  	10:00 - 20:00</li>
-              <li>Thursday		10:00 - 20:00</li>
-              <li>Friday		10:00 - 20:00</li>
-              <li>Saturday		10:00 - 20:00</li>
-              <li>Weekend: Closed</li>
+    <!-- Since Section -->
+    <section class="py-20 px-6 md:px-16 bg-black flex flex-col lg:flex-row gap-10 items-center">
+        <div class="max-w-lg">
+            <h5 class="text-yellow-600 font-semibold mb-2">SINCE 2006</h5>
+            <h1 class="text-3xl md:text-4xl font-bold mb-6">Perukar Barber Shop</h1>
+            <p class="opacity-80 mb-4">
+                Come experience a unique and edgy barbershop for all your hair and beard needs. We’re professional and
+                certified barbers using only quality products to ensure your look is sharp and clean.
+            </p>
+            <ul class="list-disc list-inside text-gray-400">
+                <li>Certified barbers</li>
+                <li>Quality grooming products</li>
+                <li>Customer-first experience</li>
             </ul>
-          </div>
-      
-          <div class="footer-column">
-            <h3>Subscribe</h3>
-            <p>Subscribe to take advantage of our campaigns and gift certificates.</p>
-            <form class="subscribe-form">
-                <input type="email" placeholder="Your email" required />
-                <button type="submit">
-                    SUBSCRIBE
-                </button>
-            </form>
-          </div>
         </div>
-        <div class="footer-bottom">
-          <p>2025 © All rights reserved. Designed by DuruThemes</p>
+        <div class="relative">
+            <img src="pics/front.jpg" alt="Front"
+                class="h-64 w-48 object-cover rounded-lg relative top-10 left-6 z-20" />
+            <img src="pics/image3.jpg" alt="Back"
+                class="h-64 w-48 object-cover rounded-lg absolute top-0 left-16 opacity-50 border border-white/10 z-10" />
         </div>
-      </footer>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-black py-20">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12 text-center">
+            <div>
+                <h2 class="text-2xl font-bold mb-3">Cuts</h2>
+                <p class="text-gray-400"><i class="fa-solid fa-scissors mr-2 text-yellow-600"></i>Precision cuts with
+                    clean
+                    finishes and style tailored to you.</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-3">Fades</h2>
+                <p class="text-gray-400">Smooth and stylish fades blended by professionals with detail.</p>
+            </div>
+            <div>
+                <h2 class="text-2xl font-bold mb-3">Shaves</h2>
+                <p class="text-gray-400">Traditional hot towel shaves with premium blades and technique.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="bg-black py-20 px-6 flex flex-col lg:flex-row items-center gap-12">
+        <img src="pics/front.jpg" alt="Experience"
+            class="w-72 h-[500px] object-cover rounded-lg shadow-lg border border-white/10" />
+        <div class="max-w-xl">
+            <h5 class="text-yellow-700 font-semibold text-sm mb-2">17 Years of Experience</h5>
+            <h2 class="text-4xl font-bold mb-6">Making People Look <br> Awesome Since 2006</h2>
+            <p class="text-gray-400 mb-6">
+                We’ve been shaping styles and confidence for over a decade. Come in, relax, and leave feeling sharper
+                than ever.
+            </p>
+            <p class="text-yellow-600 font-semibold">Harold Brown<br><span class="text-gray-500">Founder & Barber</span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Video Promo -->
+    <section class="h-[60vw] bg-cover bg-fixed bg-center flex flex-col justify-center items-center"
+        style="background-image: url('pics/image5.jpg')">
+        <div class="bg-black/60 absolute inset-0"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="text-4xl font-black text-white">Watch Our</h1>
+            <h1 class="text-4xl font-black text-white">Barbershop Promo</h1>
+            <h1 class="text-4xl font-black text-white mb-4">Video</h1>
+            <i class="fa-solid fa-play text-white text-3xl p-4 border border-white rounded-full"></i>
+        </div>
+    </section>
+
+    <!-- Barbers -->
+    <section class="bg-black py-24 px-6">
+        <div class="text-center mb-16">
+            <h5 class="text-yellow-600 font-semibold text-sm mb-2">OUR BARBERS</h5>
+            <h2 class="text-4xl font-bold">Hair Stylists</h2>
+        </div>
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10 justify-center">
+            <!-- Barber Card -->
+            <div class="relative">
+                <img src="pics/barber1.jpg" class="w-full h-96 object-cover rounded-md" />
+                <div
+                    class="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 w-[90%] bg-white text-black p-4 rounded-md text-center">
+                    <h4 class="text-lg font-bold">Helen Brown</h4>
+                    <p class="text-sm text-gray-600">Barber</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="pics/baber2.webp" class="w-full h-96 object-cover rounded-md" />
+                <div
+                    class="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 w-[90%] bg-white text-black p-4 rounded-md text-center">
+                    <h4 class="text-lg font-bold">Philip Brown</h4>
+                    <p class="text-sm text-gray-600">Barber</p>
+                </div>
+            </div>
+            <div class="relative">
+                <img src="pics/barber2.webp" class="w-full h-96 object-cover rounded-md" />
+                <div
+                    class="absolute bottom-[-30px] left-1/2 transform -translate-x-1/2 w-[90%] bg-white text-black p-4 rounded-md text-center">
+                    <h4 class="text-lg font-bold">Stephen Martin</h4>
+                    <p class="text-sm text-gray-600">Stylist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-10">
+            <div>
+                <h3 class="text-white font-bold mb-4">Contact</h3>
+                <p class="text-gray-400">0665 Broadway NY, New York<br>10001, USA</p>
+                <p class="text-yellow-500 font-bold mt-2">855 100 4444</p>
+                <p><a href="mailto:info@barber.com" class="text-gray-300">info@barber.com</a></p>
+                <div class="flex space-x-4 mt-4 text-white">
+                    <i class="fab fa-instagram hover:text-yellow-500"></i>
+                    <i class="fab fa-twitter hover:text-yellow-500"></i>
+                    <i class="fab fa-facebook hover:text-yellow-500"></i>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Work Time</h3>
+                <ul class="text-gray-400 space-y-1">
+                    <li>Mon–Sat: 10:00 - 20:00</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-bold mb-4">Subscribe</h3>
+                <p class="text-gray-400">Get updates, offers, and event details via email.</p>
+                <form class="flex mt-4 border border-yellow-600 rounded overflow-hidden">
+                    <input type="email" placeholder="Your email"
+                        class="w-full px-4 py-2 bg-transparent text-white outline-none" />
+                    <button type="submit"
+                        class="bg-yellow-600 px-5 hover:bg-yellow-500 text-white font-bold">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="text-center text-sm text-gray-600 mt-10 border-t border-white/10 pt-4">
+            2025 © All rights reserved. Designed by DuruThemes
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.getElementById("menuBtn");
+        const mobileMenu = document.getElementById("mobileMenu");
+
+        menuBtn.addEventListener("click", () => {
+            mobileMenu.classList.toggle("hidden");
+        });
+    </script>
+
 </body>
+
 </html>
